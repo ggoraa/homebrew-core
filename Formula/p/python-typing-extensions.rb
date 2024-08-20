@@ -15,8 +15,6 @@ class PythonTypingExtensions < Formula
     sha256 cellar: :any_skip_relocation, x86_64_linux:   "6d08667977a45cbf7102384b2b1bcd04f6468c0f5b763aecb36a1ccfad6a6d76"
   end
 
-  disable! date: "2024-07-05", because: "does not meet homebrew/core's requirements for Python library formulae"
-
   depends_on "python@3.11" => [:build, :test]
   depends_on "python@3.12" => [:build, :test]
   depends_on "mypy" => :test
